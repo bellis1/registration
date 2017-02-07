@@ -1,0 +1,19 @@
+<form>
+<input class='roles' name='roles' type='checkbox' value='1' />
+<input class='roles' name='roles' type='checkbox' value='2' />
+<input class='roles' name='roles' type='checkbox' value='3' />
+<input class='roles' name='roles' type='checkbox' value='4' />
+<input class='roles' name='roles' type='checkbox' value='5' />
+<input type='submit' value='submit' />
+</form>
+
+<script type="text/javascript">
+
+if($('.roles:checkbox:checked').length == 0){
+
+
+  alert("Please select")
+}else{
+  // at least one checkbox checked...
+}
+</script>

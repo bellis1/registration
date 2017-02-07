@@ -1,0 +1,101 @@
+.position {
+    margin: auto;
+    width: 80%;
+    border: 3px solid white;
+    padding: 5px;
+}
+
+.navbar {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+
+.centerIMG {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px;
+    width: 780px;
+}
+
+.float-right {
+    float:right;
+}
+
+.center {
+    text-align: center;
+    margin: -0px;
+}
+
+.bodymargin {
+    margin: auto;
+    width: 80%;
+    padding: 0px;
+}
+
+.RMVmargin {
+    margin-top: 0;
+}
+
+a.hover:hover {
+    background-color: DarkGrey;
+    border-style: solid;
+    border-color: black;
+    border-width: thin;
+    text-decoration: none;
+}
+
+a.hover {
+    background-color: Gainsboro;
+    border-style: solid;
+    border-color: black;
+    border-width: thin;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 9px 9px 9px 9px;
+    margin-right: -5px;
+}
+
+.italics {
+    font-style: italic;
+    display: inline-block;
+}
+
+h3 {
+    font-style: italic;
+}
+
+.netIDtextbox {
+    width: 423px;
+}
+
+.OtherAreaTextBox {
+    width: 300px;
+}
+
+.EmailTextBox {
+    width: 400px;
+}
+
+.dropdown {
+    width: 392px;
+}
+
+.ContactEmail {
+    width: 211px;
+}
+
+.ContactPhone {
+    width: 100px;
+}
+
+.half-width{
+    width:50%;
+    float: left;
+}
+
+.center-image{
+    display:block;
+    margin:auto;
+}
