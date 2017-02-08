@@ -9,7 +9,6 @@
     function Validate() {
         //calls all my functions
         var err = "";
-        // err+=ifOther(); Could not get to work
         err += isAreaChecked();
         err += isConfirmationChecked();
         err += isSomethingChecked();
@@ -18,18 +17,8 @@
             return false;
         }
         return true;
-        // change this back to true
+        
     }
-    // IF OTHER CHECKBOX IS SELECTED, MAKE PLEASE SPECIFY AREA TEXTBOX REQUIRED
-    // function ifOther(){ 
-    //     if(document.querySelector('.area:checked')==null){
-    //         x==0;
-    //     } else {
-    //         x==document.querySelector('.area:checked').value;
-    //     } if(x=="4" && document.getElementByName('othertb')=""){
-    //         return 'Please select an aera for which you need help in. \n';
-    //     }
-    // }
 
     function isAreaChecked() {
         if (document.querySelector('.area:checked') == null) {
@@ -74,7 +63,7 @@
     <div class="bodymargin">
         <h2>Register Now!</h2>
         <h3>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; It only takes a few moments...</h3>
-        <form action="#" name="FORM" class="half-width" onsubmit="return Validate()">
+        <form method="post" action="submission.php" name="FORM" class="half-width" onsubmit="return Validate()">
             KSU netID:
             <input type="text" name="netID" class="netIDtextbox" required>
             <br>
@@ -86,11 +75,6 @@
             <input type="checkbox" name="PHP" class="area" value="1"> &nbsp; &nbsp; C Tutoring
             <input type="checkbox" name="C" class="area" value="2"> &nbsp; &nbsp; Computer Repair
             <input type="checkbox" name="CR" class="area" value="3">
-            <br>
-            <br> Other
-            <input type="checkbox" name="othercb" class="area" value="4">
-            <p class="italics">Please Specify Areas:</p>
-            <input type="text" name="othertb" value="" placeholder="Other Area" class="OtherAreaTextBox">
             <br>
             <br> Select Availability (AM): M
             <input type="checkbox" value="M-AM" name="am" class="checkbox"> T
